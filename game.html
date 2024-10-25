@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jugar Bingo Text</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img id="logo" src="logo.png" alt="Bingo Text Logo">
+        </div>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="game.html">Jugar Solo</a>
+        <a href="multiplayer.html">Multijugador</a>
+        <a href="rules.html">Reglas</a>
+    </nav>
+    <main class="container">
+        <div id="word-input" class="centered-content">
+            <input type="text" id="new-word" placeholder="Ingresa una palabra">
+            <button onclick="addWord()" class="btn">Agregar palabra</button>
+        </div>
+        <div id="bingo-board" class="centered-content"></div>
+    </main>
+    <div id="notification" class="notification hidden"></div>
+    <footer>
+        <p>&copy; 2024 Alvaro Productions. Todos los derechos reservados.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
